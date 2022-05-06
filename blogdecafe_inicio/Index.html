@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee blog</title>
+    <link rel="stylesheet" href="css/Normalize.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <!--prefetch-->
+    <link rel="prefetch" href="AboutUs.html" as="document">
+
+    <!--preload-->
+    <link rel="preload" href="css/Normalize.css" as="style">
+    <link rel="stylesheet" href="css/Normalize.css" as="style">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/Style.css" as="style">
+    <link rel="stylesheet" href="css/Style.css">
+
+    <link rel="preload" href="img/blog1.jpg" as="image">    
+
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="container"> 
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <h1 class="logo__Name no-Margin center-text">Blog<span class="logo__bold">Coffee</span></h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="AboutUs.html" class="navigation__link">About Us</a>
+                    <a href="Courses.html" class="navigation__link">Courses</a>
+                    <a href="Contact.html" class="navigation__link">Contact</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="header__text">
+            <h2 class="no-Margin">Blog of coffee which recipes and courses</h2>
+            <p class="no-Margin">Learn from the experts with the best courses and recipes</p>
+        </div>  
+    </header>
+    
+    <div class="container main_content">
+        <main class="blog">
+             <h3>Blog</h3>
+             <!--las entradas del blog siempre se colocan en un article-->
+            <article class="entry">
+                <div class="entry_image">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp">
+                        <img loandig="lazy" src="/img/blog1.jpg" alt="image alt">
+                    </picture>
+                   
+                </div>
+                <div class="entry__content">
+                    <h4>Types of coffee beans</h4>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, veniam expedita facilis distinctio sequi optio repellat nemo repellendus harum dolores? Corporis, molestias adipisci iusto blanditiis quo assumenda nulla aperiam dolorem!</P>
+                    <a href="Entry.html" class="button button--primary">Read more</a>
+                </div>
+            </article> 
+
+
+            <article class="entry">
+                <div class="entry_image">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp">
+                        <img loandig="lazy" src="/img/blog2.jpg" alt="image alt">
+                    </picture>
+                </div>
+                <div class="entry__content">
+                    <h4>Coffee recipes</h4>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, veniam expedita facilis distinctio sequi optio repellat nemo repellendus harum dolores? Corporis, molestias adipisci iusto blanditiis quo assumenda nulla aperiam dolorem!</P>
+                    <a href="Entry.html" class="button button--primary">Read more</a>
+                </div>
+            </article> 
+
+
+
+            <article class="entry">
+                <div class="entry_image">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp">      
+                        <img loandig="lazy" src="/img/blog3.jpg" alt="image alt">
+                    </picture>
+                </div>
+                <div class="entry__content">
+                    <h4>Benefits of coffee</h4>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, veniam expedita facilis distinctio sequi optio repellat nemo repellendus harum dolores? Corporis, molestias adipisci iusto blanditiis quo assumenda nulla aperiam dolorem!</P>
+                    <a href="Entry.html" class="button button--primary">Read more</a>
+                </div>
+            </article> 
+
+
+        </main>
+        <!--Si tenemos una barra mas pequena al lado del contenido siempre debe ir en un aside-->
+        <aside class="sidebar">
+            <h3>Courses and workshops</h3>
+
+            <ul class="courses no-Padding">
+                <li class="widget-course">
+                    <h4 class="no-Margin">Techniques of coffee extraction</h4>
+                    <p class="widget-course__label">Price: 
+                        <span class="widget-course__info">Free</span>
+                    </p>
+                    <p class="widget-course__label">Slot: 
+                        <span class="widget-course__info">50</span>
+                    </p>
+                    <a href="Courses.html" class="button button--secundary">More Info</a>
+                </li>
+
+                <li class="widget-course">
+                    <h4 class="no-Margin">4 coffee recipes for beginners</h4>
+                    <p class="widget-course__label">Price: 
+                        <span class="widget-course__info">Free</span>
+                    </p>
+                    <p class="widget-course__label">Slot: 
+                        <span class="widget-course__info">50</span>
+                    </p>
+                    <a href="Courses.html" class="button button--secundary">More info</a>
+                </li>
+            </ul>
+
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <h1 class="logo__Name no-Margin center-text">Blog<span class="logo__bold">Coffee</span></h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="AboutUs.html" class="navigation__link">About Us</a>
+                    <a href="Courses.html" class="navigation__link">Courses</a>
+                    <a href="Contact.html" class="navigation__link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
